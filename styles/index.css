@@ -1,0 +1,81 @@
+/* Custom Properties */
+
+:root {
+  --clr-white-100: hsl(0, 0%, 100%);
+
+  --clr-slate-300: hsl(212, 45%, 89%);
+  --clr-slate-500: hsl(216, 15%, 48%);
+  --clr-slate-900: hsl(218, 44%, 22%);
+
+  --ff-body: "Outfit", sans-serif;
+
+  --fs-root: 15px;
+
+  --fw-700: 700;
+  --fw-400: 400;
+
+  --border-radius: 1rem;
+}
+
+/* Style Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styling */
+
+html {
+  font-size: var(--fs-root);
+}
+
+body {
+  height: 100vh;
+  font-family: var(--ff-body);
+  background: var(--clr-slate-300);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  background: var(--clr-white-100);
+  max-width: 20rem;
+  padding: 1.25rem;
+  padding-bottom: 2.5rem;
+  border-radius: var(--border-radius);
+}
+
+.card img {
+  border-radius: var(--border-radius);
+}
+
+.card h2 {
+  color: var(--clr-slate-900);
+}
+
+.card p {
+  color: var(--clr-slate-500);
+}
