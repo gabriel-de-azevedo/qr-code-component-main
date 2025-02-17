@@ -15,6 +15,7 @@
   --fw-400: 400;
 
   --border-radius: 1rem;
+  --box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 /* Style Reset */
@@ -66,6 +67,7 @@ body {
   padding: 1.25rem;
   padding-bottom: 2.5rem;
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .card img {
